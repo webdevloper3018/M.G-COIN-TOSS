@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Coin Toss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cricket Coin Toss</h1>
+
+    <img id="coin" src="cricket_heads.png" alt="Cricket Coin">
+
+    <div class="buttons">
+      <button onclick="tossCoin()">Toss Coin</button>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <p id="result"></p>
+    <p id="counter">Tosses: 0</p>
+
+    <div id="leaderboard">
+      <h3>Leaderboard (Last 5 Tosses)</h3>
+      <ul id="scores"></ul>
+    </div>
+
+    <!-- Sound -->
+    <audio id="coinSound" src="https://www.soundjay.com/misc/sounds/coin-drop-1.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
